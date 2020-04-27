@@ -5,6 +5,7 @@ LABEL maintainer="peter <7061384@126.com>"
 # install curl
 RUN apt-get update \
     && apt-get install -y \
+        openssh-client \
         curl
 
 # Clean up
