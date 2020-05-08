@@ -2,8 +2,7 @@ FROM gradle:5.6
 
 LABEL maintainer="peter <7061384@126.com>"
 
-RUN /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
-    && echo "Asia/Shanghai" > /etc/timezone
+RUN echo "Asia/Shanghai" > /etc/timezone
 
 # install curl
 RUN apt-get update \
